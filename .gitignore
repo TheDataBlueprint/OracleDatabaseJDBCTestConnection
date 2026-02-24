@@ -1,0 +1,24 @@
+# Compiled class files
+bin/
+*.class
+
+# Log files
+*.log
+
+# External jars (Nếu bạn muốn người dùng tự tải driver, hãy giữ dòng này)
+# lib/*.jar
+
+# Eclipse metadata
+.metadata/
+.settings/
+.project
+.classpath
+.factorypath
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build folders
+target/
+build/

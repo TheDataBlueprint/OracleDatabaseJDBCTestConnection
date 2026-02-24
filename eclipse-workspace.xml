@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project Oracle11gDebugConnectionVAS with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
+    <property name="dir.jarfile" value="C:/Users/NguyenXuanLuu/Downloads/Oracle11gVAStestconnect"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/oraclevastest.jar">
+            <manifest>
+                <attribute name="Main-Class" value="main.Main"/>
+                <attribute name="Class-Path" value=". lib/ojdbc8.jar"/>
+            </manifest>
+            <fileset dir="${dir.buildfile}/bin"/>
+        </jar>
+        <delete dir="${dir.jarfile}/lib"/>
+        <mkdir dir="${dir.jarfile}/lib"/>
+        <copy file="C:/Users/NguyenXuanLuu/Downloads/ojdbc8.jar" todir="${dir.jarfile}/lib"/>
+    </target>
+</project>
