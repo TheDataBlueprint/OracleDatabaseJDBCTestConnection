@@ -34,7 +34,9 @@ db.driver=oracle.jdbc.driver.OracleDriver
 
 📋 **Execution Guide**
 
-To run the application, ensure the lib/ and your config/ folder are in the same directory as the main JAR:
+Download file zip in Release tab contains jar file, config and library folder.
+
+To run the application, please upzip, update config file and ensure the lib/ and your config/ folder are in the same directory as the main JAR:
 
 **General command to run the utility**
 ```bash
