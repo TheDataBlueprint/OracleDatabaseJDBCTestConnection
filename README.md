@@ -1,6 +1,6 @@
-🚀 **Oracle Database JDBC Utility (Executable JAR)**
+🚀 **Oracle Database JDBC Utility (JAR)**
 
-A high-performance Java CLI tool built with JDK 8 for interacting with and benchmarking Oracle Databases. This utility allows developers and DBAs to perform connectivity tests, CRUD operations, and security audits without an IDE.
+A barely Java CLI tool built with JDK 8 for interacting with and benchmarking Oracle Databases (11g & 19c). This utility allows developers and DBAs to perform connectivity tests, CRUD operations, and security audits without an IDE.
 
 ✨ **Key Features**
 
@@ -23,18 +23,22 @@ Before running, ensure your config/config.properties file is structured as follo
 Properties
 db.host=10.144.1.2
 db.port=1521
-db.sid=orcl
+db.service=orcl
+#db.sid=orcl
 db.username=test1
 db.password=test2026
 db.driver=oracle.jdbc.driver.OracleDriver
 ```
+
+*Prefer using service (servicename) than sid*
+
 📋 **Execution Guide**
 
-To run the application, ensure the ojdbc8.jar and your config/ folder are in the same directory as the main JAR:
+To run the application, ensure the lib/ and your config/ folder are in the same directory as the main JAR:
 
 **General command to run the utility**
 ```bash
-java -cp oraclevastest.jar
+java -jar oraclevastest.jar
 ```
 
 
